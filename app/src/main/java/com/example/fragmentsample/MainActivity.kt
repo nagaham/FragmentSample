@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         val homeFragment = HomeFragment()
 
         val fragmentManager:FragmentManager = supportFragmentManager
-        val fragmentTransaction:FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.activity_main,homeFragment).commit()
 
+        val fragmentTransaction:FragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransaction.replace(R.id.activity_main,homeFragment).commit()
     }
 }
